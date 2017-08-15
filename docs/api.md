@@ -21,6 +21,10 @@
     - [[min-height]](#min-height)
     - [[max-width]](#max-width)
     - [[max-height]](#max-height)
+    - [[app-bundle-id]](#app-bundle-id)
+    - [[app-version]](#app-version)
+    - [[build-version]](#build-version)
+    - [[osx-sign]](#osx-sign)
     - [[show-menu-bar]](#show-menu-bar)
     - [[fast-quit]](#fast-quit)
     - [[user-agent]](#user-agent)
@@ -201,6 +205,38 @@ Maximum width of the packaged application, default is no limit.
 ```
 
 Maximum height of the packaged application, default is no limit.
+
+#### [app-bundle-id]
+
+```
+--app-bundle-id <value>
+```
+
+The bundle ID of the app from the Apple Developer Console.
+
+#### [app-version]
+
+```
+--app-version <value>
+```
+
+The version of the app
+
+#### [build-version]
+
+```
+--build-version <value>
+```
+
+The build version of the app
+
+#### [osx-sign]
+
+```
+--osx-sign
+```
+
+Whether or not to sign the app produced using electron-osx-sign
 
 #### [show-menu-bar]
 

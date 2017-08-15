@@ -17,7 +17,8 @@ module.exports = {
   externals: nodeModules,
   module: {
     loaders: [
-            { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+      { loader: 'json-loader', test: /\.json$/ },
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
     ],
   },
   devtool: 'source-map',

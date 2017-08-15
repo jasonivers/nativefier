@@ -17,6 +17,10 @@ export default function (inpOptions) {
   const options = {
     dir: PLACEHOLDER_APP_DIR,
     name: inpOptions.name,
+    appBundleId: inpOptions.appBundleId,
+    appVersion: inpOptions.appVersion,
+    buildVersion: inpOptions.buildVersion,
+    osxSign: inpOptions.osxSign,
     win32metadata: {
       ProductName: inpOptions.name,
       InternalName: inpOptions.name,
@@ -95,4 +99,3 @@ export default function (inpOptions) {
 
   return asyncConfig(options);
 }
-

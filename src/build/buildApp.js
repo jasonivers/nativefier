@@ -13,6 +13,10 @@ const copy = ncp.ncp;
 function selectAppArgs(options) {
   return {
     name: options.name,
+    appBundleId: options.appBundleId,
+    appVersion: options.appVersion,
+    buildVersion: options.buildVersion,
+    osxSign: options.osxSign,
     targetUrl: options.targetUrl,
     counter: options.counter,
     width: options.width,
